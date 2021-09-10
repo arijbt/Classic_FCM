@@ -3,7 +3,7 @@ close all
 clear all   
 
 i_ori=imread('brain.bmp');
-%f_ori=imnoise(f_ori,'gaussian',0.03);
+%f_ori=imnoise(f_ori,'gaussian',0.03);  % noise affects the results of FCM
 imData = reshape(i_ori,[],1);
 imData = double(imData);
 % classic FCM function taking a vector and the number of clusters 
